@@ -1,0 +1,172 @@
+/* 横幅和目录 结尾 */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1400px) {
+    .nav-right {
+        display: none;
+    }
+}
+
+
+body {
+    min-height: 100vh;
+    position: relative;
+}
+
+::-webkit-scrollbar {
+    display: none;
+    /* Chrome Safari */
+}
+
+.head img {
+    max-width: 100%;
+    height: auto;
+}
+
+.head {
+    overflow: hidden;
+    /*溢出 hidden:内容将被裁减以适应边距（padding）盒。不提供滚动条*/
+}
+
+/*目录*/
+.nav {
+    background-color: #50536e;
+    position: relative;
+    margin: 0 0 20px 0;
+    z-index: 2;
+}
+
+.nav-left ul.shell {
+    /* 弹性布局 水平垂直居中 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*两端对齐*/
+}
+.nav-xm {
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+ul.shell li,
+.nav-zt,
+.login,
+.register {
+    color: white;
+    font-size: 25px;
+}
+
+ul.shell .button {
+    background-color: #50536e;
+    width: 170px;
+    height: 70px;
+    text-align: center;
+    line-height: 65px;
+    transition: .3s;
+    cursor: pointer;
+    /*鼠标指针样式*/
+}
+
+ul.shell .button:hover {
+    background-color: #d15a39;
+}
+
+ul.shell .button li:hover {
+    background-color: #ffb29d;
+}
+
+ul.shell .button ul li {
+    height: 0;
+    transition: .2s;
+    opacity: 0;
+    transform: translateY(-65px);
+    background-color: #e07a5f;
+}
+
+ul.shell .button:hover li {
+    height: 65px;
+    opacity: 1;
+    /*透明度*/
+    transform: translateY(0);
+    /*偏移0就是没有*/
+}
+.nav-right {
+    display: "";
+}
+.nav .nav-right {
+    position: absolute;
+    right: 30px;
+    top: 15px;
+}
+
+.nav-right .login{
+    font-size: 30px;
+    margin: 0;
+    letter-spacing: 5px;
+}
+
+.nav-right .login-img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.login-container {
+    display: flex;
+    align-items: center;
+}
+
+/*目录*/
+
+/*主体*/
+.body {
+    height: 1500px;
+}
+
+.body-top {
+    height: 700px;
+}
+
+.zt {
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+
+}
+
+.fgx {
+    width: 200px;
+    border-width: 3px;
+}
+
+.body-bottom {
+    height: 500px;
+}
+
+/*主体*/
+
+/*结尾*/
+.footer {
+    height: 100px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    bottom: 0;
+}
+
+.copyright {
+    color: gray;
+    text-align: center;
+}
+
+.bq {
+    letter-spacing: 3px;
+}

@@ -1,0 +1,32 @@
+.body {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 1000px;
+}
+.lx {
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+.join-zt {
+    font-size: 50px;
+    font-weight: bold;
+}
+.join-zt2 {
+    font-size: 30px;
+    font-weight: bold;
+
+}
+.join-zt3 {
+    font-size: 30px;
+    font-weight: bold;
+}
+.join {
+    width: 1200px;
+    height: 800px;
+}
+.QQ {
+    width: 30px;
+    height: 30px;
+}

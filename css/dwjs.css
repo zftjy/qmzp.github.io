@@ -1,0 +1,65 @@
+/*动物介绍*/
+.animal-js {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0 0 0;
+}
+ul.a-js{
+    width: 1190px;
+    /* 去除无序列表默认的小圆点 */
+    list-style: none;
+    /* 弹性布局 让元素均匀排列 */
+    display: flex;
+    justify-content: space-around;
+}
+
+ul.a-js li{
+    /* 相对定位 */
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    margin: 0 10px;
+}
+
+ul.a-js li:hover{
+    cursor: pointer;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.mask{
+    /* 绝对定位 */
+    position: absolute;
+    top:100%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background: #464646e8;
+    color: #fff;
+    text-indent: 2em;
+    /* 添加过渡 */
+    transition: all .7s ease-out;
+}
+
+ul li:hover .mask{
+    top: 0;
+}
+
+.mask h1{
+    line-height: 50px;
+}
+
+.mask p{
+    padding: 20px;
+    font-weight: 500;
+    word-break: break-all;
+}

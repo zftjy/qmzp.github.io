@@ -1,0 +1,91 @@
+/*轮播图*/
+.lbt {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    
+}
+.lbt-body {
+    width: 1200px;
+    height: 700px;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 20px 30px 20px rgba(0, 0, 0, 0.25);
+   
+}
+
+.lbt-images {
+    width: 500%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    left: 0;
+    transition: .3s;
+}
+.lbt-img:nth-child(1) {
+    background-image: url(../images/lb1.jpg);
+}
+
+.lbt-img:nth-child(2) {
+    background-image: url(../images/lb2.jpg);
+}
+
+.lbt-img:nth-child(3) {
+    background-image: url(../images/lb3.jpg);
+}
+
+.lbt-img:nth-child(4) {
+    background-image: url(../images/lb4.jpg);
+}
+
+.lbt-img:nth-child(5) {
+    background-image: url(../images/lb5.jpg);
+}
+
+.lbt-img {
+    width: 100%;
+    background-size: cover;
+}
+
+.min {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 40px;
+    width: 30%;
+    z-index: 999;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.m {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: solid rgba(255, 255, 255, 0.5) 5px;
+    background-color: #fff;
+}
+
+.lbt-button {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    user-select: none;
+}
+
+.lbt-button-left,.lbt-button-right {
+    font-size: 50px;
+    background-color: rgba(160, 193, 255, 0.2);
+    padding: 0 20px;
+    cursor: pointer;
+    line-height: 700px;
+    color: #fff;
+}
+
+/*轮播图*/
